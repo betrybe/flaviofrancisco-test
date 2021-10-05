@@ -6,14 +6,13 @@ import sys
 
 
 def main():
-    
     if len(sys.argv) < 3:
         return print("Verifique os argumentos", file=sys.stderr)
-    
+
     for arg in sys.argv:
         if arg == "":
             return print("Verifique os argumentos", file=sys.stderr)
-        
+
     file_name, path, report_type = sys.argv
     file_type = path.split(".")[1]
 
@@ -28,6 +27,7 @@ def main():
     result = my_report.import_data(path, report_type)
     print(result)
     return '' + result
+
 
 if __name__ == "__main__":
     main()
