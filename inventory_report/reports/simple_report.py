@@ -10,7 +10,7 @@ class SimpleReport:
             current_quantity = 0
             for compared in companies_list:
                 if (
-                    comparator["nome_da_empresa"] 
+                    comparator["nome_da_empresa"]
                     == compared["nome_da_empresa"]
                 ):
                     current_quantity += 1

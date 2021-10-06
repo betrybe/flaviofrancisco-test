@@ -1,9 +1,8 @@
 from inventory_report.importer.importer import Importer
 import csv
 
+
 class CsvImporter(Importer):
-
-
     @staticmethod
     def validate_path(path):
         file_extension = path.split(".")[-1]
