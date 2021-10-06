@@ -1,9 +1,9 @@
-#importando os métodos abstratos da classe em Importer
 from inventory_report.importer.importer import Importer
 import csv
 
-#criando classe para importar caminho com 
 class CsvImporter(Importer):
+
+
     @staticmethod
     def validate_path(path):
         file_extension = path.split(".")[-1]
